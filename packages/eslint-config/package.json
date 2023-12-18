@@ -1,0 +1,19 @@
+{
+  "name": "@brutalism/eslint-config",
+  "private": true,
+  "version": "0.1.0",
+  "description": "",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint . --ext .js,.cjs,.mjs,.jsx,.ts,.tsx --cache --fix -c index.js --ignore-path ../../.gitignore"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "eslint-config-turbo": "^1.11.2",
+    "eslint-plugin-json": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0"
+  }
+}

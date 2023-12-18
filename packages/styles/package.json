@@ -28,9 +28,10 @@
     "clean:node_modules": "npx -y del-cli node_modules",
     "clean:dist": "npx -y del-cli dist",
     "format": "prettier --write --ignore-path ../../.prettierignore --ignore-path ./.prettierignore .",
-    "lint": "npm run format && eslint --cache --fix ."
+    "lint": "npm run format && eslint --cache --fix --ignore-path ../../.gitignore ."
   },
   "devDependencies": {
+    "@brutalism/eslint-config": "workspace:*",
     "@brutalism/tailwind-preset": "workspace:*",
     "@brutalism/tsconfig": "workspace:*",
     "@swc/core": "^1.3.100",
