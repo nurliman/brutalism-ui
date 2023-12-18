@@ -11,17 +11,17 @@ const styles: any = {
     "transitionTimingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
     "transitionDuration": "150ms"
   },
-  ".brutal-btn,\r\n    .brutal-btn-white": {
+  ".brutal-btn,\n    .brutal-btn-white": {
     "--tw-bg-opacity": "1",
     "backgroundColor": "rgb(255 255 255 / var(--tw-bg-opacity))",
     "--tw-text-opacity": "1",
     "color": "rgb(0 0 0 / var(--tw-text-opacity))"
   },
-  ".brutal-btn:hover,\r\n    .brutal-btn-white:hover": {
+  ".brutal-btn:hover,\n    .brutal-btn-white:hover": {
     "--tw-bg-opacity": "1",
     "backgroundColor": "rgb(244 244 245 / var(--tw-bg-opacity))"
   },
-  ".brutal-btn:active,\r\n    .brutal-btn-white:active": {
+  ".brutal-btn:active,\n    .brutal-btn-white:active": {
     "--tw-bg-opacity": "1",
     "backgroundColor": "rgb(228 228 231 / var(--tw-bg-opacity))"
   },
