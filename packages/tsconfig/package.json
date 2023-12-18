@@ -1,0 +1,11 @@
+{
+  "name": "@brutalism/tsconfig",
+  "private": true,
+  "version": "0.1.0",
+  "description": "",
+  "license": "MIT",
+  "scripts": {},
+  "dependencies": {
+    "@tsconfig/node18": "^18.2.2"
+  }
+}

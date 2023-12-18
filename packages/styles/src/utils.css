@@ -1,0 +1,38 @@
+.absolute-center {
+  @apply absolute top-1/2 left-1/2;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.brutal {
+  &-shadow {
+    &-sm {
+      box-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+    }
+
+    & {
+      box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
+    }
+  }
+}
+
+.no-drag {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -ms-user-drag: none;
+  user-drag: none;
+}
+
+.no-select {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

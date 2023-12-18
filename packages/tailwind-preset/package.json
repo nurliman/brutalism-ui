@@ -1,0 +1,37 @@
+{
+  "name": "@brutalism/tailwind-preset",
+  "private": true,
+  "version": "0.1.0",
+  "description": "",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./index.js",
+      "default": "./index.js",
+      "types": "./index.d.ts"
+    }
+  },
+  "scripts": {
+    "clean": "npx -y concurrently \"npm:clean:*\"",
+    "clean:turbo": "npx -y del-cli .turbo",
+    "clean:node_modules": "npx -y del-cli node_modules",
+    "format": "prettier --write --ignore-path ../../.prettierignore --ignore-path ./.prettierignore .",
+    "lint": "npm run format && eslint --cache --fix ."
+  },
+  "dependencies": {
+    "@brutalism/tokens": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^18",
+    "eslint": "^8.56.0",
+    "tailwindcss": "^3.3.6"
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "extends": "@brutalism/tsconfig/base.json",
+  "include": ["src"]
+}

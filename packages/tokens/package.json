@@ -1,0 +1,41 @@
+{
+  "name": "@brutalism/tokens",
+  "version": "0.1.0",
+  "description": "",
+  "type": "module",
+  "license": "MIT",
+  "main": "dist/index.cjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.js",
+      "default": "./dist/index.cjs"
+    },
+    "./colors": {
+      "types": "./dist/colors.d.ts",
+      "import": "./dist/colors.js",
+      "require": "./dist/colors.cjs",
+      "default": "./dist/colors.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup --config tsup.config.ts",
+    "clean": "npx -y concurrently \"npm:clean:*\"",
+    "clean:turbo": "npx -y del-cli .turbo",
+    "clean:node_modules": "npx -y del-cli node_modules",
+    "format": "prettier --write --ignore-path ../../.prettierignore --ignore-path ./.prettierignore .",
+    "lint": "npm run format && eslint --cache --fix ."
+  },
+  "devDependencies": {
+    "@brutalism/tsconfig": "workspace:*",
+    "@swc/core": "^1.3.100",
+    "@types/node": "^18",
+    "eslint": "^8.56.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  }
+}

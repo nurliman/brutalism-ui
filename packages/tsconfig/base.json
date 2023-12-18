@@ -1,0 +1,10 @@
+{
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "display": "Default",
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "module": "ES2020",
+    "moduleResolution": "Bundler"
+  }
+}
